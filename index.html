@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      * {
+        margin: 0;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        position: relative;
+        width: 1440px;
+        height:960px;
+        background: #D5E1EF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);      
+      }
+      .qr-code-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px 16px 40px;
+        gap : 24px;
+        width:320px;
+        height:499px;
+        box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.0476518);
+        border-radius: 20px;
+        background: #FFFFFF;
+      }
+      .qr-code-title {
+        
+        width: 256px;
+        height: 52px;
+
+        /* text-preset-1 */
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 120%;
+        /* or 26px */
+        text-align: center;
+
+        color: #1F314F;
+      }
+      .qr-code-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 16px;
+        gap: 16px;
+        width: 288px;
+        height: 131px;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+      }
+      .qr-code-description {
+        width: 256px;
+        height: 63px;
+
+        /* text-preset-2 */
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 140%;
+        /* or 21px */
+        text-align: center;
+        letter-spacing: 0.2px;
+
+        color: #68778D;
+      }
+      .qr-code-image {
+        align-self: center;
+        width: 288px;
+        height: 288px;
+        background: #2C7DFA;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+  </style>
+  </head>
+  <body>
+    <figure class="qr-code-container">
+      <img class="qr-code-image" src="images/image-qr-code.png">
+      <figcaption class="qr-code-content">
+        <h1 class="qr-code-title">Improve your front-end skills by building
+          projects</h1>
+        <p class="qr-code-description">Scan the QR code to visit Frontend Mentor
+          and take your coding skills to the next level</p>
+      </figcaption>
+    </figure>
+  </body>
+</html>
