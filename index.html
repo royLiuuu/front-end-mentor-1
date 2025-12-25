@@ -22,15 +22,16 @@
       }
       body {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0px;
-        position: relative;
-        width: 1440px;
-        height:960px;
+        min-height: 100vh;
+        margin: 0;
         background: #D5E1EF;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);      
+      }
+      main {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
       }
       .qr-code-container {
         display: flex;
@@ -100,14 +101,16 @@
   </style>
   </head>
   <body>
-    <figure class="qr-code-container">
-      <img class="qr-code-image" src="images/image-qr-code.png">
-      <figcaption class="qr-code-content">
-        <h1 class="qr-code-title">Improve your front-end skills by building
-          projects</h1>
-        <p class="qr-code-description">Scan the QR code to visit Frontend Mentor
-          and take your coding skills to the next level</p>
-      </figcaption>
-    </figure>
+    <main>
+      <figure class="qr-code-container">
+        <img class="qr-code-image" src="images/image-qr-code.png" alt="QR code linking to Frontend Mentor">
+        <figcaption class="qr-code-content">
+          <h1 class="qr-code-title">Improve your front-end skills by building
+            projects</h1>
+          <p class="qr-code-description">Scan the QR code to visit Frontend Mentor
+            and take your coding skills to the next level</p>
+        </figcaption>
+      </figure>
+    </main>
   </body>
 </html>
